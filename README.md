@@ -4,8 +4,20 @@
 [![Status](https://img.shields.io/badge/Timeline-A%20%7C%20B-brightgreen)]()
 [![Reality](https://img.shields.io/badge/Reality-Stable-blue)]()
 [![Paradox Level](https://img.shields.io/badge/Paradox%20Level-0%25-success)]()
+[![Deployment](https://img.shields.io/badge/Netlify-Deployed-00C7B7)]()
 
 > *"Your past is calling. We have the answer."*
+
+## 🚀 Live Demo
+🌐 **Live Site**: [Deployed on Netlify](https://landing-page-timeleap.netlify.app)
+📱 **GitHub Repository**: [https://github.com/priyanshuchawda/landing-page.git](https://github.com/priyanshuchawda/landing-page.git)
+
+## 🛠️ Tech Stack
+- **Frontend**: React 18 + TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS + Shadcn/ui Components
+- **Deployment**: Netlify (Auto-deploy from GitHub)
+- **Version Control**: Git + GitHub
 
 ## 🌀 Project Overview
 
@@ -62,6 +74,54 @@ npm run dev
 ```bash
 npm run build
 npm run preview
+```
+
+## 🚀 Deployment Guide
+
+### Automatic Deployment via Netlify
+
+This project is configured for automatic deployment to Netlify via GitHub integration:
+
+1. **GitHub Repository**: [https://github.com/priyanshuchawda/landing-page.git](https://github.com/priyanshuchawda/landing-page.git)
+2. **Auto-deploy**: Every push to the `main` branch triggers automatic deployment
+3. **Build Settings**: 
+   - Build command: `npm run build`
+   - Publish directory: `dist`
+   - Node version: 18
+
+### Manual Netlify Deployment
+
+If you want to deploy manually:
+
+1. **Build the project**:
+   ```bash
+   npm run build
+   ```
+
+2. **Deploy to Netlify**:
+   - Go to [Netlify](https://netlify.com)
+   - Drag and drop the `dist` folder
+   - Or connect your GitHub repository for automatic deployments
+
+### Environment Configuration
+
+The project includes a `netlify.toml` file with:
+- Build settings
+- Redirect rules for SPA routing
+- Environment variables configuration
+
+### Other Deployment Options
+
+**Vercel**:
+```bash
+npm install -g vercel
+vercel --prod
+```
+
+**GitHub Pages**:
+```bash
+npm run build
+# Deploy the dist folder to gh-pages branch
 ```
 
 ## 🎮 Interactive Commands
